@@ -47,6 +47,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 		existingEmployee.setFirstName(employee.getFirstName());
 		existingEmployee.setLastName(employee.getLastName());
 		existingEmployee.setSalary(employee.getSalary());
+		existingEmployee.setEmail(employee.getEmail());
+		existingEmployee.setPhoneNumber(employee.getPhoneNumber());
+		existingEmployee.setAddress(employee.getAddress());
+		existingEmployee.setPincode(employee.getPincode());
+		existingEmployee.setDob(employee.getDob());
+		existingEmployee.setGender(employee.getGender());
+		existingEmployee.setMaritalStatus(employee.getMaritalStatus());
+		
+		
 		Employee updatedEmployee = employeeRepo.save(existingEmployee);
 		return updatedEmployee;
 	}
